@@ -1,7 +1,13 @@
 package class6_methods;
 
 public class MethodExample {
+    public static void main(String[] args) {
 
+    }
+
+
+
+}
 //    String msg = "pizza";
 //    String reverseMessage = ""; //Why?
 //    char[] letterBox = msg.toCharArray(); //Why is this needed?
@@ -57,4 +63,4 @@ public class MethodExample {
 //                System.out.println(Heading);
 
 
-}
+

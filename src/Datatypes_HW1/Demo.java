@@ -3,47 +3,68 @@ package Datatypes_HW1;
 import com.sun.xml.internal.ws.addressing.WsaActionUtil;
 
 public class Demo {
-    public static double Division(int a, int b)
-    {
+   /* public static double Division(int a, int b) {
         double result = 0;
-        if(b != 0)
-        {
+        if (b != 0) {
             double num = a;
-            result = num/b;
+            result = num / b;
         }
         return result;
-    }
+    }*/
+
     /**
      * Create a method to reverse any string
      */
-    {
+    public static String ReverseString(String value) {
+       // String message = "happy new year"; //syadiloh yppah
+        String reverseMessage = "";
+        System.out.println("Message : " + value);
 
+        for (int i = value.length() - 1; i >= 0; i--) {
+            reverseMessage = reverseMessage + value.charAt(i);
 
-
+        }
+        return reverseMessage;
     }
+    /**
+     * Create a method to find if a string is in palindrome
+     * Reverse the string and compare
+     */
+    public static boolean Demo2(String name) {
+
+        String reversed = ReverseString(name);
+        return reversed.equalsIgnoreCase(name);
+    }
+
 
     /**
      * Create a method to calculate sum of values in a given int-array
      */
-    public static int ArrayTotal( int[] arrName)
-    {
-        int total = 0;
-        for (int num : arrName) {
-            total = total += num;
-        }
-        return total;
-    }
+//    public static int ArrayTotal(int[] arrName) {
+//        int total = 0;
+//        for (int num : arrName) {
+//            total = total += num;
+//        }
+//        return total;
+//    }
+
     public static void main(String[] args) {
-        int [] numbers = {1,2,3,4,5};
+        /*int[] numbers = {1, 2, 3, 4, 5};
 
         System.out.println(ArrayTotal(numbers));
-           int a = 15;
-           int b = 5;
+        int a = 15;
+        int b = 5;
 
         System.out.println(Division(a, b));
+*/
+        String msg = "hello World";
+        String answer = ReverseString(msg);
+        System.out.println("Message in reverse: " + answer);
+        String checkForPalindrome = "madam";
+        System.out.println(checkForPalindrome + " is a palindrome? " + Demo2(checkForPalindrome));
 
-        }
-
+    }
+}
 //        byte HrsInDay = 24;
 //        System.out.println(HrsInDay);
 //
@@ -91,5 +112,5 @@ public class Demo {
 
 
 
-}
+
 
