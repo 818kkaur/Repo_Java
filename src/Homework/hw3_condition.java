@@ -1,4 +1,4 @@
-package Datatypes_HW1;
+package Homework;
 
 public class hw3_condition {
     public static void main(String[] args) {

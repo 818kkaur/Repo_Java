@@ -1,4 +1,4 @@
-package Datatypes_HW1;
+package Homework;
 
 public class hw4_loops {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package Datatypes_HW1;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+package Homework;
 
 public class HW5_Methods {
     public static void main(String[] args) {
@@ -110,4 +108,5 @@ public class HW5_Methods {
 
 
 
-     
+
+

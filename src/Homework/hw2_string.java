@@ -1,4 +1,4 @@
-package Datatypes_HW1;
+package Homework;
 
 public class hw2_string {
     public static void main(String[] args) {
@@ -42,5 +42,8 @@ public class hw2_string {
         System.out.println("Length of Name: " + FNameLetters.length);
 
     }
+
+
+
 
 }
