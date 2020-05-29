@@ -2,7 +2,7 @@ package Class3_Nonprimitive;
 
 import java.util.Arrays;
 
-public class Array {
+public class        Array {
     public static void main(String[] args) {
         int[] arrInt = new int[3];
         int value = arrInt.length;
