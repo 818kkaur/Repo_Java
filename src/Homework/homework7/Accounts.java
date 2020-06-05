@@ -1,11 +1,40 @@
 package Homework.homework7;
 
-
 import java.util.Arrays;
 
 import static java.lang.System.exit;
 
 public class Accounts {
+
+    public Accounts(String accountType, double amount)
+    {
+        switch (accountType.toLowerCase())
+        {
+            case "saving":
+            case "savings":
+                if(amount>=initialAmt)
+                {
+                    System.out.println("Your " + accountType+" has been created with a balance of "+amount);
+                }
+                else {
+                    System.out.println("Sufficient funds has not been provided");
+                }
+                break;
+            case "checking":
+                if(amount>=initialAmt)
+                {
+                    System.out.println("Your " + accountType+" has been created with a balance of "+amount);
+                }
+                else {
+                    System.out.println("Low funds has not been provided");
+                }
+                break;
+            default:
+                {
+                    System.out.println("Invalid account type");
+                }
+        }
+    }
 
     String ssn;
     double initialAmt = 1000;
@@ -47,6 +76,7 @@ public class Accounts {
         balance[accountCount] = amount;
 
     }
+
 
     public void openAccount(String accountType, double amount) {
         if (accountCount>= 0 && accountCount < 5) {

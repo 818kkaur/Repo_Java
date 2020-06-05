@@ -82,6 +82,7 @@ public class HW5_Methods {
         return max;
     }
 
+
     /**
      * Create a method that will tell the name of student with maximum marks/score.
      * int[] scores = {90, 89, 191, 100, 81};
