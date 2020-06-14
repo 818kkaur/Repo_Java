@@ -45,11 +45,11 @@ public class Revise {
             {
                 System.out.println("Your speed is: " + userSpeed+ ".You have "+ points+" points against your license.");
             }
-            else if(points>0 && points<11)
+            else if(points>0 && points<=11)
             {
                 System.out.println("Your speed is: " + userSpeed+ ".You have "+ points+" points against your license.");
             }
-            else if(points>12)
+            else if(points>=12)
             {
                 System.out.println("You have "+ points+" against your license......Your license is suspended");
             }
@@ -87,7 +87,7 @@ public class Revise {
         while (true) {
             boolean found = false;
             checkFor++;
-            for (int i = 0; i < arr.length; i++) {
+            for (int i = 0; i < arr.length; i++)
                 {
                     if (arr[i] == checkFor) {
                         System.out.println(checkFor + " found");
@@ -103,7 +103,7 @@ public class Revise {
                     System.out.println("Missing value: "+checkFor);
             }
         }
-    }
+
 
 //
 //       for (int i = 1; i < arr.length; i++) {

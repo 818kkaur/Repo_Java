@@ -31,12 +31,13 @@ public class ArrayList_concept {
         //Size method to find the length of array
         System.out.println(Ar2.size());
         System.out.println(names.size());
-        //Remove method- removes based on index........when printed, it will tell u wat value has been removed
+        //Remove method- removes based on index in integer........when printed, it will tell u wat value has been removed
         System.out.println(Ar2.remove(2));
         System.out.println("New size of my list after removal: "+Ar2.size());
 
         System.out.println(names.remove(2));
         //If multiple values to be removed then with this method, only the 1st value will be removed.
+        //If we use remove method in string datatype then you have to give value instead of the index whereas if datatype is integer then it will take index value
         System.out.println(names.remove("happy"));
         System.out.println("New size of names after removal: "+names.size());
         System.out.println(names);
